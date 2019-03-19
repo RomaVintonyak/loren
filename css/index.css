@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+@import url('https://fonts.googleapis.com/css?family=Martel');
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
 
 html body{
     width: 100%;
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #2222;
 }
 .container-fluid .navbar-brand{
@@ -25,22 +31,32 @@ padding-right: 30px;
     height: 500px;
 }
 .carousel-inner img{
-    /*transform: translateY(-30%);*/
+    /*transform: translateY(-20%);*/
     /*width: 100%;*/
     height: 100%;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
     .carousel-inner img{
-        width: 100%;
-    }
+        width: 100%;}
 }
 
 .carousel-caption{
     position: absolute;
     top: 50%;
     transform: translateY(-100%);
-    text-shadow: 1px 1px 10px #000000;
 }
+.carousel-caption h1{
+    padding-top: 40px;
+    font-style: initial;
+    color: rgb(34, 34, 34);
+}
+.carousel-caption h3{
+    color: rgb(34, 34, 34);
+    font-family: "Book Antiqua", sans-serif;
+    font-size: 4em;
+    padding-top: 20px;
+}
+
 @media (max-width: 450px) {
     .carousel-caption .display-2 {
         font-size: 3em;
@@ -54,22 +70,84 @@ padding-right: 30px;
     margin: 0 auto;
     padding-top: 2em;
 }
-.alert hr{
-    border-top: 2px solid #f0f0f0;
-    width: 95%;
-    margin-top: 0.3em;
-    margin-bottom: 1em;
+.alert h1 {
+    color: rgb(34, 34, 34);
+    padding-top: 1px;
+    font-family: "Raleway", sans-serif;
+    font-size: 5em;
+    margin-bottom: 1px;
+
 }
-.fa-spa, .fa-atlas, .fa-book-open, .fa-leaf, .fa-car, .fa-gift {
-    color: #e54d26;
+.alert h2{
+     color: rgb(34, 34, 34);
+     font-family: "Book Antiqua", sans-serif;
+     margin-bottom: 1px;
+ }
+.alert h2:hover {
+    text-shadow: -16px 16px 0px #a3a3a3;
+    transition: 0.5s;
+    top: -8px;
+    left: 8px;
+    cursor: pointer;
+}
+.mainBlock img{
+    width: 10%;
+    padding-top: 20px;
+}
+.mainBlock h3{
+    color: rgb(34, 34, 34);
+    padding-top: 1px;
+    font-family: "Book Antiqua", sans-serif;
+    margin-bottom: 1px;
     font-size: 2em;
-    margin:  1em;
+
 }
+.text-typing
+{
+    width: 13em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 8s steps(50, end);
+    animation: type 8s steps(50, end);
+}
+@keyframes type{
+    from { width: 0px; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0px; }
+}
+.mainBlock h3:hover{
+    text-shadow: 3px 3px 3px #8f8f8f;
+    transition: text-shadow 300ms linear 0ms;
+}
+.mainBlock p{
+    color: rgb(34, 34, 34);
+    padding-top: 5px;
+    font-family: "Book Antiqua", sans-serif;
+    margin-bottom: 1px;
+    font-size: 1em;
+    transition: all 300ms linear 0ms;
+}
+
+.mainBlock p:hover {
+    transform: rotate(0deg) scale(1.1,1.1) ;
+    box-shadow: 0px 0px 0px white;
+    z-index: 999;
+    transition: transform 300ms linear 0ms,
+    box-shadow 300ms linear 0ms, z-index 300ms linear 0ms;
+}
+
+
+
+
+
+
+
+
 #fixed{
-    height: 400px;
-    border-top: 4px solid #f0f0f0;
-    border-bottom: 4px solid #f0f0f0;
-    background: url("../img/index/slide1.jpg") no-repeat center center fixed;
+    height: 200px;
+    background: url("../img/index/fon.jpeg") no-repeat center center fixed;
     background-blend-mode: multiply;
     border-color: lightblue;
     background-size: cover;
@@ -77,25 +155,27 @@ padding-right: 30px;
     -moz-background-size: cover;
     -webkit-background-size: cover;
 }
-#gifsBtn{
-    margin-bottom: 20px;
-}
-#gifs img{
-    max-width: 100%;
-    max-height: 200px;
-    margin-bottom: 20px;
+footer span, i{
+    color: black;
 }
 .social a{
-    font-size: 3em;
-    padding: 10px;
+    font-size: 1.5em;
+    padding: 4px;
 }
-.fa-facebook{color: #3b5998}
-.fa-instagram{color: #ff6c52
+.fa-envelope, .fa-facebook, .fa-instagram{color: black}
+.fa-instagram:hover, .fa-facebook:hover, .fa-envelope:hover{color: #737475
 }
-.fa-instagram:hover, .fa-facebook:hover{color: #c6c8ca}
-footer{
-    background-color: #3f3f3f;
-    padding-top: 20px;
-    border-top: 4px solid silver;
-    color: white;
+
+.rotate:hover {
+    -webkit-transform: rotateZ(20deg);
+    -ms-transform: rotateZ(20deg);
+    transform: rotateZ(20deg);
+    cursor: pointer;
 }
+.border:hover {
+    box-shadow: inset 0 0 0 1px rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+
+
