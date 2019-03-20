@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Patua+One');
-@import url('https://fonts.googleapis.com/css?family=Martel');
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 
@@ -12,6 +9,7 @@ html body{
     font-family: 'Raleway', sans-serif;
     color: #2222;
 }
+/*navbar*/
 .container-fluid .navbar-brand{
     font-size: 35px;
 }
@@ -27,6 +25,7 @@ padding-right: 30px;
 .nav-link{
     font-size: 1.1em; !important;
 }
+/*sider*/
 .carousel-inner{
     height: 500px;
 }
@@ -56,10 +55,10 @@ padding-right: 30px;
     font-size: 4em;
     padding-top: 20px;
 }
-
+/*main block*/
 @media (max-width: 450px) {
     .carousel-caption .display-2 {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 .padding{
@@ -78,18 +77,21 @@ padding-right: 30px;
     margin-bottom: 1px;
 
 }
+.alert h1:hover{
+    text-shadow: 3px 3px 3px #8f8f8f;
+    transition: text-shadow 300ms linear 0ms;
+}
 .alert h2{
      color: rgb(34, 34, 34);
      font-family: "Book Antiqua", sans-serif;
      margin-bottom: 1px;
  }
 .alert h2:hover {
-    text-shadow: -16px 16px 0px #a3a3a3;
-    transition: 0.5s;
-    top: -8px;
-    left: 8px;
+    text-shadow: 3px 3px 3px #8f8f8f;
+    transition: text-shadow 300ms linear 0ms;
     cursor: pointer;
 }
+/*opys poslug*/
 .mainBlock img{
     width: 10%;
     padding-top: 20px;
@@ -100,6 +102,7 @@ padding-right: 30px;
     font-family: "Book Antiqua", sans-serif;
     margin-bottom: 1px;
     font-size: 2em;
+    padding-bottom: 10px;
 
 }
 .text-typing
@@ -121,7 +124,7 @@ padding-right: 30px;
     text-shadow: 3px 3px 3px #8f8f8f;
     transition: text-shadow 300ms linear 0ms;
 }
-.mainBlock p{
+.mainBlock p, .mainBlock ol{
     color: rgb(34, 34, 34);
     padding-top: 5px;
     font-family: "Book Antiqua", sans-serif;
@@ -129,22 +132,15 @@ padding-right: 30px;
     font-size: 1em;
     transition: all 300ms linear 0ms;
 }
-
-.mainBlock p:hover {
+.hower:hover{
     transform: rotate(0deg) scale(1.1,1.1) ;
-    box-shadow: 0px 0px 0px white;
+    box-shadow: 1px 1px 1px #cacaca;
     z-index: 999;
-    transition: transform 300ms linear 0ms,
+    transition: transform 300ms linear 100ms,
     box-shadow 300ms linear 0ms, z-index 300ms linear 0ms;
+    background: #f4f4f4;
 }
-
-
-
-
-
-
-
-
+/*img block*/
 #fixed{
     height: 200px;
     background: url("../img/index/fon.jpeg") no-repeat center center fixed;
@@ -155,6 +151,7 @@ padding-right: 30px;
     -moz-background-size: cover;
     -webkit-background-size: cover;
 }
+/*footer*/
 footer span, i{
     color: black;
 }
@@ -165,17 +162,14 @@ footer span, i{
 .fa-envelope, .fa-facebook, .fa-instagram{color: black}
 .fa-instagram:hover, .fa-facebook:hover, .fa-envelope:hover{color: #737475
 }
-
+/*rotate img for main block*/
 .rotate:hover {
     -webkit-transform: rotateZ(20deg);
     -ms-transform: rotateZ(20deg);
     transform: rotateZ(20deg);
     cursor: pointer;
 }
-.border:hover {
-    box-shadow: inset 0 0 0 1px rgb(34, 34, 34);
-    cursor: pointer;
-}
+
 
 
 
