@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,12 +25,12 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">L<i class="far fa-dot-circle">Ren</i></a>
-        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-terget="#navbarResponsive">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-terget="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a  class="nav-link" href="../index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Головна</a></li>
                 <li class="nav-item"><a class="nav-link" href="../src/about-us.html">Про нас</a></li>
                 <li class="nav-item"><a class="nav-link active" href="../src/our-services.html">Наші послуги</a></li>
                 <li class="nav-item"><a class="nav-link" href="../src/galery.html">Галерея</a></li>
@@ -73,47 +73,76 @@
         </a>
     </div>
 </div>
-
-<br><br><br><br><br><br>
-
-<div class="container padding">
+<div class="container-fluid">
+    <div class="row">
+        <h1>Ми пропонуємо:</h1>
+    </div>
+</div>
+<br>
+<div class="container-fluid padding">
     <div class="row padding">
         <div class="col-md-4">
             <div class="card">
-                <img src="../img/index/slide4.jpg" class="card-img-top">
+                <img src="../img/our-services/florystyka.jpeg" class="card-img-top">
                 <div class="card-body">
-                    <h4 class="card-title">Зона молодих</h4>
+                    <h4 class="card-title text-center">Флористика</h4>
                     <p class="card-text">Оформлення зони молодих на будьякий смак</p>
-                    <a href="#" class="btn btn-warning">Переглянути</a>
+                    <a href="#" class="btn btn-block">Детально</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img src="../img/index/slide3.jpg" class="card-img-top">
+                <img src="../img/our-services/pr.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h4 class="card-title">Зона молодих</h4>
+                    <h4 class="card-title text-center">Зона молодих</h4>
                     <p class="card-text">Оформлення зони молодих на будьякий смак</p>
-                    <a href="#" class="btn btn-warning">Переглянути</a>
+                    <a href="#" class="btn btn-block">Детально</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img src="../img/index/slide4.jpg" class="card-img-top">
+                <img src="../img/our-services/fotozona.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h4 class="card-title">Зона молодих</h4>
+                    <h4 class="card-title text-center">Фотозона</h4>
                     <p class="card-text">Оформлення зони молодих на будьякий смак</p>
-                    <a href="#" class="btn btn-warning">Переглянути</a>
+                    <a href="#" class="btn btn-block">Детально</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/our-services/vyizna.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Виїздна реєстрація</h4>
+                    <p class="card-text">Оформлення зони молодих на будьякий смак</p>
+                    <a href="#" class="btn btn-block">Детально</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/our-services/poligraph.jpeg" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Весільна поліграфія</h4>
+                    <p class="card-text">Оформлення зони молодих на будьякий смак</p>
+                    <a href="#" class="btn btn-block">Детально</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/our-services/fotozona.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Оформлення під ключ</h4>
+                    <p class="card-text">Оформлення зони молодих на будьякий смак</p>
+                    <a href="#" class="btn btn-block">Детально</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
 <!--Footer-->
 <footer class="container-fluid bg-light">
     <div class="container-fluid text-center social">
@@ -131,6 +160,24 @@
         <span> Всі права захищено &copy;2019</span>
     </div>
 </footer>
+<script>
+    $(document).ready(function () {
+        $('.col-md-4').hover(
+            function () {
+                $(this).animate({
+                    marginTop: "-=2%",
+                }, 200);
+            },
+
+            function () {
+                $(this).animate({
+                    marginTop: "0%",
+                }, 200);
+
+            }
+        )
+    });
+</script>
 <script type="text/javascript">
     //** 1) Adds ability to scroll to an absolute position (from top of page) or specific element on the page instead.
     //** 2) Fixes scroll animation not working in Opera.
