@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--TODO: create nav bar menu for small devices-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/access.js"></script>
 </head>
 <body>
@@ -27,7 +29,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-terget="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div id="navbarResponsive" class="collapse navbar-collapse" >
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link active" href="index.html">Головна</a></li>
                 <li class="nav-item"><a class="nav-link" href="src/about-us.html">Про нас</a></li>
@@ -79,7 +81,7 @@
 <!--Main block-->
 <div class="container">
     <div class="text-center alert">
-        <div class="rowcol-12">
+        <div class="col-12">
             <h1 class="display-3 text-typing">Loren</i></h1>
             <h2 class="display-4">Ми пропонуємо:</h2>
         </div>
@@ -261,5 +263,7 @@
         }
     }
     scrolltotop.init()</script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 </body>
 </html>

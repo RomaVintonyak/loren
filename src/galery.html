@@ -79,7 +79,7 @@
     <h1>Наші роботи:</h1>
     <h2>Арка</h2>
     <div class="gallery">
-        <figure class="photo">
+        <figure class="photo"> <!--TODO: create alt atribute for img teg-->
             <a href="../img/galery/arka/big/1.jpeg" data-lightbox="roadtrip"><img id="arka1" src="../img/galery/arka/small/1.jpeg"/></a>
         </figure>
         <figure class="photo">
@@ -132,9 +132,6 @@
             <a href="../img/galery/pz/big/2.JPG" data-lightbox="roadtrip"><img id="pr2" src="../img/galery/pz/small/2.JPG"/></a>
         </figure>
         <figure class="photo">
-            <a href="../img/galery/pz/big/3.jpg" data-lightbox="roadtrip"><img id="pr3" src="../img/galery/pz/small/3.jpg"/></a>
-        </figure>
-        <figure class="photo">
             <a href="../img/galery/pz/big/4.jpeg" data-lightbox="roadtrip"><img id="pr4" src="../img/galery/pz/small/4.jpeg"/></a>
         </figure>
         <figure class="photo">
@@ -142,6 +139,10 @@
         </figure>
         <figure class="photo">
             <a href="../img/galery/pz/big/6.jpg" data-lightbox="roadtrip"><img id="pr6" src="../img/galery/pz/small/6.jpg"/></a>
+        </figure>
+        <!--TODO: replace img 3 after img two-->
+        <figure class="photo">
+        <a href="../img/galery/pz/big/3.jpg" data-lightbox="roadtrip"><img id="pr3" src="../img/galery/pz/small/3.jpg"/></a>
         </figure>
     </div>
 </div>
@@ -271,7 +272,7 @@
         foto6.style.height = '200px';
         foto6.style.width = '300px';
     }*/
-    var pr1 = document.getElementById('pr1');
+   /* var pr1 = document.getElementById('pr1');
     if(pr1 && pr1.style) {
         pr1.style.height = '250px';
         pr1.style.width = '300px';

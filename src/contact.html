@@ -10,7 +10,7 @@
     <meta http-equiv="content-language" content="ru">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="img/index/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="../img/index/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
     <link href="../css/access.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/contact.css">
@@ -21,15 +21,17 @@
     <script type="text/javascript" src="../js/access.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<!--Nav bar section-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">L<i class="far fa-dot-circle">Ren</i></a>
-        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-terget="#navbarResponsive">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navSuport"
+                aria-controls="navSuport" aria-expanded="false" aria-label="togleNavi">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="navSuport">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a  class="nav-link" href="../index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Головна</a></li>
                 <li class="nav-item"><a class="nav-link" href="../src/about-us.html">Про нас</a></li>
                 <li class="nav-item"><a class="nav-link" href="../src/our-services.html">Наші послуги</a></li>
                 <li class="nav-item"><a class="nav-link" href="../src/galery.html">Галерея</a></li>
@@ -38,6 +40,22 @@
         </div>
     </div>
 </nav>
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="../index.html">L<i class="far fa-dot-circle">Ren</i></a>
+        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-terget="#navbar"
+                 aria-controls="navbar" aria-expanded="false" aria-label="togleNavi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a  class="nav-link" href="../index.html">Головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="../src/about-us.html">Про нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="../src/our-services.html">Наші послуги</a></li>
+                <li class="nav-item"><a class="nav-link" href="../src/galery.html">Галерея</a></li>
+                <li class="nav-item"><a class="nav-link active" href="../src/contact.html">Контакти</a></li>
+            </ul>
+        </div>
+</nav>-->
 <!--Slider-->
 <div id="slides" class="carousel slide" data-ride="carousel">
     <ul class="carousel-indicators">
@@ -72,23 +90,84 @@
         </a>
     </div>
 </div>
+<!--Mai page-->
+<div class="container pt-5">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="h2">Залиште заявку на зворотній звязок і ми звяжемось з Вами</h2>
+        </div>
+    </div>
+</div>
+<div class="container-fluid pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-lg-6">
+                <form class="form-group">
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я *(обов'язково)</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ваше ім'я" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Ваш email *(обов'язково)</label>
+                        <input type="email" class="form-control" id="mail" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Ваш телефон *(не обов'язково)</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Ваш телефон">
+                    </div>
+                    <div class="form-group">
+                        <label for="mesages">Залиште повідомлення</label>
+                        <input style="height: 100px" type="text" class="form-control" id="mesages" placeholder="Ваше повідомлення">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Хочете домовитись про зустріч?
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark mt-2">Відправити</button>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-6">
+                <div class="container-fluid ml-5">
+                <div class="container text-left pt-4">
+                    <h2 class="h2"><i class="fas fa-phone mr-3"></i>0950235779</h2>
+                </div>
+                <div class="container text-left pt-4">
+                    <h2 class="h2"><i class="fab fa-viber mr-3"></i>0972349231</h2>
+                </div>
+                <div class="container text-left pt-4">
+                    <h3 class="h3"><a href="https://www.instagram.com/wedding_decor_loren/" target="_blank"><i class="fab fa-instagram mr-3"></i></a>@wedding_decor_loren</h3>
+                </div>
+                <div class="container text-left pt-4">
+                    <h2 class="h3"><i class="fas fa-envelope-open-text"></i>loren.wedding.decor@gmail.com</h2>
+                </div>
+                <div class="container text-left pt-4">
+                    <h2 class="h3"><i class="far fa-clock mr-3"></i>Графік роботи: Пн-Нд 10:00-19:00</h2>
+                    <p></p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br>
 
 <footer class="container-fluid bg-light">
     <div class="container-fluid text-center social">
         <span>Наші контакти:</span><br>
         <i class="fas fa-phone">+38095 02 35 779</i><br>
         <i class="fab fa-viber">+38097 23 49 231</i><br>
-        <a href="https://www.facebook.com/oksanavolodynyrivna" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/wedding_decor_loren/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="href=mailto:roma@br.if.ua" target="_blank" title="Відправте нам повідомлення"><i class="fas fa-envelope"></i></a><br>
+        <a href="https://www.facebook.com/oksanavolodynyrivna" target="_blank" title="Facebook"><i
+                class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/wedding_decor_loren/" target="_blank" title="Instagram"><i
+                class="fab fa-instagram"></i></a>
+        <a href="href=mailto:roma@br.if.ua" target="_blank" title="Відправте нам повідомлення"><i
+                class="fas fa-envelope"></i></a><br>
     </div>
     <div class="container text-sm-center">
-    <span > Всі права захищено &copy;2019</span>
+        <span> Всі права захищено &copy;2019</span>
     </div>
 </footer>
 <!--scroling page-->
