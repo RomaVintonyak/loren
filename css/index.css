@@ -32,6 +32,9 @@ padding-right: 30px;
     /*width: 100%;*/
     height: 100%;
 }
+.flexabl-img{
+    max-width: 100%;
+}
 
 @media  (min-width: 860px) {
     .carousel-inner img{
