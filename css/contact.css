@@ -4,3 +4,44 @@
 #paddingCarosel {
     padding-top: 150px;
 }
+.col h2{
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.col h2:hover {
+    text-shadow: 3px 3px 3px #8f8f8f;
+    transition: text-shadow 300ms linear 0ms;
+    cursor: pointer;
+}
+.container h2{
+    font-family: Raleway, sans-serif;
+    color: black;
+}
+.container h3{
+    font-family: Raleway, sans-serif;
+    color: black;
+}
+/*Style for form*/
+form > div{
+    background: white;
+}
+form > div >label {
+    opacity: 0.1%;
+    font-weight: bold;
+    color: black;
+}
+form > div >input[type="tel"],
+form > div >input[type="text"],
+form > div >input[type="email"]{
+    width: 100%;
+    background: #eeeeee;
+}
+form > div >input[type="tel"]:focus,
+form > div >input[type="text"]:focus,
+form > div >input[type="email"]:focus{
+    outline: 0;
+    background: #adf1ff;
+}
+
+
