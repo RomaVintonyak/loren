@@ -41,7 +41,7 @@ form > div >input[type="tel"]:focus,
 form > div >input[type="text"]:focus,
 form > div >input[type="email"]:focus{
     outline: 0;
-    background: #ffc84f;
+    background: #f2f2f2;
 }
 form > div > input:valid {
     border-color: green;
