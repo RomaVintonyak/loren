@@ -2,37 +2,36 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Lobster');
 
 /*main block*/
-.head h1{
+.head h2{
     font-family: "Book Antiqua", sans-serif;
-    font-size: 4em;
+    font-size: 3em;
     color: #000000;
 
 }
-.head h3{
+.head h4, .head h3{
     font-family: "Book Antiqua", sans-serif;
-    font-size: 2em;
+    font-size: 1.2em;
     color: #000000;
 }
 .head p{
     font-family: "Book Antiqua", sans-serif;
-    font-size: 1.6em;
+    font-size: 1em;
     color: #000000;
-    margin-left: 50px;
-    margin-right: 50px;
 }
-.head img{
-    width: 8%;
-}
-.carousel-inner span{
+.head i{
     color: red;
 }
 #paddingCarosel{
-    padding-top: 150px;
+    padding-top: 100px;
 }
-.head h1:hover {
+.head h2:hover {
     text-shadow: 3px 3px 3px #8f8f8f;
     transition: text-shadow 300ms linear 0ms;
     cursor: pointer;
+}
+/*slider text*/
+.slide-info{
+
 }
 
 

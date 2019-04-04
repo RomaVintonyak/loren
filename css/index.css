@@ -25,11 +25,11 @@ padding-right: 30px;
 }
 /*slider*/
 .carousel-inner{
-    height: 500px;
+    height: 450px;
 }
 .carousel-inner img{
-    /*transform: translateY(-20%);*/
-    /*width: 100%;*/
+    transform: translateY(-5%);
+    width: 100%;
     height: 100%;
 }
 .flexabl-img{
@@ -47,7 +47,7 @@ padding-right: 30px;
     transform: translateY(-100%);
 }
 .carousel-caption h1{
-    padding-top: 40px;
+    padding-top: 30px;
     font-style: initial;
     color: rgb(34, 34, 34);
 }
