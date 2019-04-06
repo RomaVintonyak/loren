@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Lobster');
 
-#paddingCarosel {
+/*#paddingCarosel {
     padding-top: 150px;
-}
+}*/
 /*style for galery*/
 .gallery:after {
     content: '';

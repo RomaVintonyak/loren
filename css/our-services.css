@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Lobster');
 
-#paddingCarosel{
+/*#paddingCarosel{
     padding-top: 100px;
-}
+}*/
 .mainPage h2{
     font-family: "Book Antiqua", sans-serif;
     font-size: 2.5em;
@@ -38,10 +38,10 @@
     padding: 40px;
 }
 .card{
-    height: auto;
+    height: 33em;
 }
 
 .card img{
     width: 100%;
-    height: 300px;
+    height: 250px;
 }

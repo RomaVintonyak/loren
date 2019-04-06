@@ -21,9 +21,9 @@
 .head i{
     color: red;
 }
-#paddingCarosel{
+/*#paddingCarosel{
     padding-top: 100px;
-}
+}*/
 .head h2:hover {
     text-shadow: 3px 3px 3px #8f8f8f;
     transition: text-shadow 300ms linear 0ms;

@@ -47,15 +47,15 @@ padding-right: 30px;
     transform: translateY(-100%);
 }
 .carousel-caption h1{
-    padding-top: 30px;
+    padding-top: 25px;
     font-style: initial;
     color: rgb(34, 34, 34);
 }
 .carousel-caption h3{
     color: rgb(34, 34, 34);
     font-family: "Book Antiqua", sans-serif;
-    font-size: 4em;
-    padding-top: 20px;
+    font-size: 2.5em;
+    padding-top: 15px;
 }
 /*main block*/
 @media (max-width: 450px) {
