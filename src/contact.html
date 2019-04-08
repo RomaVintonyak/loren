@@ -1,3 +1,52 @@
+<?php
+session_start();
+include "index.html";
+if (isset($_POST["send"]))
+{
+    $name = htmlspecialchars ($_POST["name"]);
+    $mail = htmlspecialchars($_POST["mail"]);
+    $subj =  htmlspecialchars ($_POST["subject"]);
+    $mesag = htmlspecialchars($_POST["mesages"]);
+
+    $_SESSION["form"] = $name;
+    $_SESSION["mail"] = $mail;
+    $_SESSION["subj"] = $subj;
+    $_SESSION["mesag"] = $mesag;
+
+    $_error_name = "";
+    $_error_mail = "";
+    $_error_subj = "";
+    $_error_mesag = "";
+    $error = false;
+    if($_error_name == ""){
+        $_error_name = "Введіть свої дані";
+        $error = true;
+    }
+
+    if($_error_mail == "" || !preg_match("/@/", $mail)){
+        $_error_mail = "Введіть коректний email адрес";
+        $error = true;
+    }
+    if(strlen($subj) == 0){
+        $_error_subj = "Введіть тему повідомлення";
+        $error = true;
+    }
+    if(strlen($mesag) == 0){
+        $_error_mesag = "Введіть своє повідомлення";
+        $error = true;
+    }
+    if (!$error ){
+        $subj = "=?utf-8?B?".base64_encode($subj)."?=";
+        $headers = "From: $mail\r\nReply-to: $mail\r\nContent-type: text/plain; charset-utf8\r\n";
+        mail($mail, $subj, $mesag, $headers);
+        header ("Location: succsess.php?send=1");
+        exit;
+    }
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

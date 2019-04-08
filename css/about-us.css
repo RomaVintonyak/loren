@@ -6,7 +6,6 @@
     font-family: "Book Antiqua", sans-serif;
     font-size: 3em;
     color: #000000;
-
 }
 .head h4, .head h3{
     font-family: "Book Antiqua", sans-serif;
@@ -21,9 +20,7 @@
 .head i{
     color: red;
 }
-/*#paddingCarosel{
-    padding-top: 100px;
-}*/
+
 .head h2:hover {
     text-shadow: 3px 3px 3px #8f8f8f;
     transition: text-shadow 300ms linear 0ms;
